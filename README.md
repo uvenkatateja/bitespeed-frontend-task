@@ -5,7 +5,7 @@
 A simple Chatbot flow builder implemented using React and React Flow. The application allows users to create chatbot flows by connecting multiple messages together to determine the order of execution.
 
 ## Live Demo
-[Live Demo](https://your-deployment-url.vercel.app)
+[Live Demo](https://bitespeed-frontend-task-beta.vercel.app)
 
 ## Task Implementation
 
@@ -130,7 +130,7 @@ yarn build
 
 ## Deployment
 
-This project is deployed on Vercel. You can view the live demo [here](https://your-deployment-url.vercel.app).
+This project is deployed on Vercel. You can view the live demo [here](https://bitespeed-frontend-task-beta.vercel.app).
 
 ## Additional Notes
 
@@ -139,6 +139,3 @@ This project is deployed on Vercel. You can view the live demo [here](https://yo
 - Built on top of React Flow with custom components
 - Follows all task requirements strictly
 
-## Repository
-
-[GitHub Repository](https://github.com/your-username/bitespeed-frontend-task)
