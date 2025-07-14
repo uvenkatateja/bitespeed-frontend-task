@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for responsive design */
+html, body {
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+/* Improve touch interaction on mobile */
+.react-flow__node {
+  touch-action: none;
+}
+
+/* Ensure controls are visible on mobile */
+.react-flow__controls {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
+}
+
+/* Improve mobile node dragging experience */
+@media (max-width: 768px) {
+  .react-flow__node {
+    min-width: 150px;
+  }
+  
+  .react-flow__controls {
+    bottom: 10px;
+    right: 10px;
+    top: auto;
+    left: auto;
+  }
+}
+
+/* Custom animation for save button */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.animate-fade-out {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
