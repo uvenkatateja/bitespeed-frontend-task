@@ -6,6 +6,57 @@
 html, body {
   overflow: hidden;
   touch-action: manipulation;
+  height: 100%;
+}
+
+/* Base layout fixes */
+.reactflow-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+/* Sidebar fixes */
+.sidebar {
+  background: white;
+  padding: 1rem;
+  border-right: 1px solid #e5e7eb;
+  height: 100%;
+  min-width: 250px;
+  z-index: 10;
+}
+
+/* Node panel improvements */
+.node-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.node-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  cursor: grab;
+  background: white;
+  transition: all 0.2s;
+}
+
+.node-item:hover {
+  border-color: #93c5fd;
+  background: #f0f9ff;
+}
+
+/* Header improvements */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  background: white;
 }
 
 /* Improve touch interaction on mobile */
@@ -29,6 +80,19 @@ html, body {
     right: 10px;
     top: auto;
     left: auto;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
   }
 }
 

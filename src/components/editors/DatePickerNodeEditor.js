@@ -14,11 +14,11 @@ import { BiCalendar, BiTrash } from 'react-icons/bi';
  * @param {Function} deleteNode - Function to delete the current node
  */
 export default function DatePickerNodeEditor({ selectedNode, updateSelectedNode, cancelSelection, deleteNode }) {
-  // Default date picker configuration
-  const defaultConfig = { prompt: '', minDate: '', maxDate: '' };
-  
   // Parse existing configuration if available
   const parseConfig = useCallback((value) => {
+    // Default date picker configuration moved inside useCallback
+    const defaultConfig = { prompt: '', minDate: '', maxDate: '' };
+    
     if (value) {
       try {
         return JSON.parse(value);
@@ -27,7 +27,7 @@ export default function DatePickerNodeEditor({ selectedNode, updateSelectedNode,
       }
     }
     return defaultConfig;
-  }, [defaultConfig]);
+  }, []); // No dependencies needed now
   
   const [config, setConfig] = useState(parseConfig(selectedNode?.data?.value));
   
