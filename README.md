@@ -7,6 +7,11 @@ A simple Chatbot flow builder implemented using React and React Flow. The applic
 ## Live Demo
 [Live Demo](https://bitespeed-frontend-task-beta.vercel.app)
 
+
+https://github.com/user-attachments/assets/67368c46-e3dd-4f2f-af35-fe58f77e24dc
+
+
+
 ## Task Implementation
 
 ### 1. Text Node ✓
