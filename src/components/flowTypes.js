@@ -1,27 +1,18 @@
 import TextMessageNode from './nodes/TextMessageNode';
 import ImageMessageNode from './nodes/ImageMessageNode';
-import CodeNode from './nodes/CodeNode';
 import DatePickerNode from './nodes/DatePickerNode';
+import CodeBlockNode from './nodes/CodeBlockNode';
 import CustomEdge from './edges/CustomEdge';
 
-/**
- * Node type registry
- * Register all node types here to make them available in the flow builder
- * When adding a new node type:
- * 1. Import the node component
- * 2. Add it to this object with the key matching the 'type' in NodeSelector.js
- */
+// Node types configuration
 export const nodeTypes = {
   text: TextMessageNode,
   image: ImageMessageNode,
-  code: CodeNode,
-  date: DatePickerNode,
+  datePicker: DatePickerNode,
+  codeBlock: CodeBlockNode,
 };
 
-/**
- * Edge type registry
- * Register all edge types here to make them available in the flow builder
- */
+// Edge types configuration
 export const edgeTypes = {
   'custom-edge': CustomEdge,
 }; 
